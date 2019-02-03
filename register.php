@@ -20,6 +20,7 @@
 <html>
 <head>
 	<title>Register</title>
+	<title> Openshift demo </title>
 </head>
 <body>
 <h1>Register</h1>
