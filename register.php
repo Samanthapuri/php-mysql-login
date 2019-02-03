@@ -3,7 +3,7 @@
 	if($_POST['submit']){
 		$username = strip_tags($_POST['username']);
 		$password = strip_tags($_POST['password']);
-		$db = mysqli_connect(mysql, rakesh, Welcome@123, phpdb) or die ("Failed to connect");
+		$db = mysqli_connect(mysql, rakesh, $config['password'], phpdb) or die ("Failed to connect");
 		$query = "INSERT INTO members(username,password,activated) VALUES('$username', '$password','1')";
 		$result = mysqli_query($db,$query);
 		if($result) {
