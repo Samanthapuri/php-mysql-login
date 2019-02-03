@@ -15,7 +15,6 @@ if($_POST['submit']) {
 	}
 	if($username == $dbUserName && $password == $dbPassword) {
 		$_SESSION['username'] = $username;
-		$_SESSION['id'] = $userId;
 		header('Location: user.php');
 	}
 	else {
