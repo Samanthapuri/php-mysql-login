@@ -6,13 +6,12 @@ if($_POST['submit']) {
 	$username = strip_tags($_POST['username']);
 	$password = strip_tags($_POST['password']);
 
-	$sql = "SELECT id,username,password FROM members where username = '$username' LIMIT 1";
+	$sql = "SELECT username,password FROM members where username = '$username' LIMIT 1";
 	$query = mysqli_query($db, $sql);
 	if($query) {
 		$row = mysqli_fetch_row($query);
-		$userId= $row[0];
-		$dbUserName = $row[1];
-		$dbPassword = $row[2];
+		$dbUserName = $row[0];
+		$dbPassword = $row[1];
 	}
 	if($username == $dbUserName && $password == $dbPassword) {
 		$_SESSION['username'] = $username;
