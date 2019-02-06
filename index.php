@@ -39,7 +39,7 @@ echo gethostname();
 	<input type="submit" name="submit" value="Login">
 </form>
 
-<a href="register.php" >Register</a>
-
+<a href="hostname.php" >Register</a>
+	
 </body>
 </html>
