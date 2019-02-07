@@ -22,7 +22,7 @@ if($_POST['submit']) {
 
 	}
 }
-echo gethostname();
+
 ?>
 
 
@@ -39,7 +39,7 @@ echo gethostname();
 	<input type="submit" name="submit" value="Login">
 </form>
 
-<a href="hostname.php" >Register</a>
+<a href="register.php" >Register</a>
 	
 </body>
 </html>
