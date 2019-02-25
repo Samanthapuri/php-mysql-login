@@ -32,7 +32,7 @@ if($_POST['submit']) {
 	<title>PHP-SQL </title>
 </head>
 <body>
-<h1>Login with webhook</h1>
+<h1>Login </h1>
 <form method="post" action="index.php">
 	<input type="text" name = "username" placeholder="Enter username">
 	<input type="password" name="password" placeholder="Enter password here">
